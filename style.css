@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #001731;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 320px;
+    height: 550px;
+    background-color: #002d5a;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.card__img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.card__img > img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.card__details {
+    position: relative;
+    padding: 0;
+    margin: 20px 0;
+}
+.card__details > h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card__details > p {
+    color: #e3e3e3;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.coin__date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__eth,
+.card__time {
+    display: flex;
+    align-items: center;
+}
+
+.card__eth > img,
+.card__time > img {
+    height: 20px;
+    object-fit: contain;
+    filter: invert(78%) sepia(7%) saturate(3504%) hue-rotate(158deg) brightness(100%) contrast(70%);
+}
+
+.card__eth > span,
+.card__time > span {
+    margin-left: 10px;
+    color: #69c0d8;
+}
+
+.card__avatar {
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.card__avatar > img {
+    width: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.card__avatar > p {
+    color: gray;
+    font-size: 16px;
+}
+
+.card__avatar > p > span {
+    color: #e3e3e3;
+}
